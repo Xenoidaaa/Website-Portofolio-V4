@@ -1,0 +1,534 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #F4F4F9;
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+.text-build {
+    color: #2563EB;
+}
+
+.text-opening {
+    font-family: "Space Grotesk", sans-serif;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding-top: 3.9rem;
+    font-size: 2.0em;
+}
+
+
+/* NAGIAN NAVIGATION */
+
+.nav-main {
+    background-color: #ffffff;
+    box-shadow: 4px 5px 50px rgba(0, 0, 0, 0.184);
+}
+
+.list-group {
+    display: flex;
+    flex-direction:row;
+    justify-content: flex-end;
+    gap: 1px;
+
+}
+
+.list-element {
+   font-family: "Space Grotesk", sans-serif;
+   color: black;
+   font-size: 20px;
+   margin: 0;
+   padding: 30px;
+   list-style: none;
+   cursor: pointer;
+}
+
+.list-element a {
+    color: black;
+}
+
+.list-element:hover {
+    text-shadow: 0 0 15px #2563EB;
+    transform: translateY(-2px);
+    transition: all 0.3s ease;
+}
+
+@media screen and (max-width: 768px) {
+
+    .nav-main {
+        height: 70px;
+    }
+
+    .text-opening {
+        font-size: 22px;
+    }
+    
+    .list-element {
+        font-size: 14px;
+        margin: 0 !important;
+    }
+}
+
+/* BAGIAN INFO */
+
+.main-info {
+    display: flex;
+    justify-content: center;
+    padding-top: 2.5rem;
+    gap: 10px;
+
+}
+
+.info-element {
+    align-items: center;
+    font-family: "Space Grotesk", sans-serif;
+    font-size: 0.8rem;
+    display: flex;
+    gap: 2px;
+    background-color: #2563EB;
+    box-shadow: 4px 5px 50px rgba(0, 0, 0, 0.184);
+    color: rgb(255, 255, 255);
+    padding: 7px;
+    border-radius: 15px;
+}
+
+.info-element img {
+    width: 30px;
+    object-fit: cover;
+}
+
+.info-element:hover {
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 0 15px #2563EB;
+    transform: translateY(-2px);
+    transition: all 0.3s ease;
+    color: black;
+}
+
+@media screen and (max-width: 768px) {
+
+   .main-info {
+    display: grid;
+    grid-template-columns: repeat(2, 0.3fr);
+    gap: 10px;
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    padding-top: 40px;
+   }
+
+    .info-element {
+       font-size: 12px;
+       width: 100%;
+    }
+
+    .info-element img {
+        width: 20px;
+    }
+    
+}
+
+/* BAGIAN TEXT NAME */
+
+.text-name {
+     font-family: "Space Grotesk", sans-serif;
+     font-size: 20px;
+     color: rgb(0, 0, 0);
+     text-align: center;
+     padding-top: 15%;
+     padding-bottom: 30px;
+     letter-spacing: 1px;
+}
+
+
+/* BAGIAN ABOUT ME */
+
+.main-about {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 40px;
+    gap: 25px;
+    width: 45%;
+    margin: 0 auto;
+    border-radius: 30px;
+    background-color: #FFFFFF;
+    box-shadow: 4px 5px 50px rgba(0, 0, 0, 0.184);
+}
+
+
+
+.article-about {
+    justify-content: center;
+
+}
+
+.img-about img {
+    width: 150px;
+    object-fit: cover;
+    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+    border: 3px solid #2563EB;
+}
+
+.article-about p {
+    font-family: "Nunito Sans", sans-serif;
+    text-align: left;
+    max-width: 400px;
+    color: rgb(0, 0, 0);
+}
+
+.article-about h3 {
+    font-family: "Courgette", cursive;
+    padding-bottom: 20px;
+    font-size: 26px;
+    text-align: center;
+    color: rgb(0, 0, 0);
+}
+
+.text-web {
+    color: #2563EB;
+}
+
+@media screen and (max-width: 768px) {
+
+    .text-name {
+        font-size: 10px;
+    }
+
+    .main-about {
+        padding: 10px;
+        width: 85%;
+    }
+
+    .article-about {
+        padding-top: 20px;
+    }
+
+    .img-about img {
+        margin-top: 30px;
+        width: 110px;
+    }
+
+    .article-about p {
+        font-size: 0.8rem;
+        max-width: 400px;
+    }
+
+    .article-about h3 {
+        text-align: center;
+        font-size: 1.6rem;
+    }
+    
+}
+
+/* BAGIAN CORE TECH SKILL */
+
+.text-coretech {
+    font-family: "Space Grotesk", sans-serif;
+    color: rgb(0, 0, 0);
+    padding-top: 20px;
+    text-align: center;
+    margin-top: 70px;
+    font-size: 1.5rem;
+}
+
+.text-tech {
+    color: #2563EB;
+}
+
+.main-skill {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.list-skill {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+   
+    padding-top: 2rem;
+    gap: 30px;
+}
+
+.group-skill {
+    padding: 5px;
+    border-radius: 20px;
+    background-color: #F8FAFC;
+    box-shadow: 4px 5px 50px rgba(0, 0, 0, 0.184);
+    gap: 30px;
+    padding: 15px;
+}
+
+.group-skill h3 {
+    font-family: "Space Grotesk", sans-serif;
+    font-size: 14px;
+    text-align: center;
+    color: rgb(0, 0, 0);
+}
+
+.css-logo{
+    padding-top: 20px;
+}
+
+
+.group-skill img {
+    padding-bottom: 5px;
+    width: 80px;
+
+}
+
+@media screen and (max-width: 768px) {
+
+   .list-skill {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-bottom: 20px;
+
+   }
+    
+}
+
+/* BAGIAN PROJECT */
+
+.text-prj {
+    color: #2563EB;
+}
+
+.text-project {
+    font-family: "Space Grotesk", sans-serif;
+    font-size: 30px;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    margin-top: 10%;
+}
+
+.project-main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    margin-top: 5%;
+}
+
+.project-list {
+    /*display: flex;
+    overflow-x: auto;
+    gap: 10px;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+    scroll-snap-type: x mandatory;*/
+
+
+    display: grid;
+    grid-template-columns: repeat(3, 0.1fr);
+    gap: 20px;
+}
+
+.group-project {
+    list-style: none;
+    background-color: #FFFFFF;
+    box-shadow: 4px 5px 50px rgba(0, 0, 0, 0.184);
+    border-radius: 20px;
+    padding: 15px;
+    text-align: center;
+}
+
+.group-project img {
+    width: 350px;
+    height: 170px;
+    border: 1px solid #2563EB;
+    border-radius: 10px;
+    margin-bottom: 20px;
+
+}
+
+.group-project p {
+    font-family: "Nunito Sans", sans-serif;
+    color: rgb(0, 0, 0);
+    padding-top: 10px;
+    font-size: 0.9rem;
+    text-align: left;
+    max-width: 350px;
+    padding-bottom: 35px;
+
+}
+
+.group-project h3 {
+    font-family: "Space Grotesk", sans-serif;
+    text-align: center;
+    color: #2563EB;
+}
+
+.group-project a {
+    font-family: "Space Grotesk", sans-serif;
+    color: rgb(255, 255, 255);
+    background-color: #2563EB;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.group-project:hover {
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 0 15px #2563EB;
+    transform: translateY(-2px);
+    transition: all 0.3s ease;
+    color: black;
+}
+
+.group-project a:hover {
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 0 15px #2563EB;
+    transform: translateY(-2px);
+    transition: all 0.3s ease;
+    color: black;
+}
+
+@media screen and (max-width: 768px) {
+
+    .project-list {
+        display: flex;
+        overflow-x: auto;
+        gap: 10px;
+        scroll-behavior: smooth;
+        scrollbar-width: none;
+    }
+
+    .group-project img {
+        width: 300px;
+    }
+
+    .group-project p {
+        font-size: 13px;
+        max-width: 300px;
+        text-align: left;
+    }
+
+    .group-project {
+        width: 100%
+    }
+
+    .project-list::-webkit-scrollbar {
+        display: none;
+    }
+
+
+}
+
+/* BAGIAN SERTIFIKAT */
+
+.text-sertifikat {
+    font-family: "Space Grotesk", sans-serif;
+    text-align: center;
+    font-size: 25px;
+    color: black;
+    margin-top: 3.7rem;
+}
+
+.text-e {
+    color: #2563EB;
+}
+
+.main-sertifikat {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 5%;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.list-sertifikat {
+
+    display: grid;
+    flex-direction: row;
+    grid-template-columns: repeat(4, 0.1fr);
+    gap: 15px;
+    text-align: center;
+    list-style: none;
+}
+
+.group-sertifikat {
+    background-color: #FFFFFF;
+    box-shadow: 4px 5px 50px rgba(0, 0, 0, 0.184);
+    border-radius: 20px;
+    padding: 10px;
+    width: 350px;
+    padding-bottom: 40px;
+}
+
+.group-sertifikat img {
+    width: 100%;
+    height: 200px;
+    object-fit: contain;
+    margin-bottom: 35px;
+
+}
+
+.group-sertifikat a {
+    font-family: "Space Grotesk", sans-serif;
+    font-size: 13px;
+    text-align: center;
+    color: black;
+    background-color: #2563EB;
+    padding: 10px;
+    border-radius: 5px;
+    color: white;
+}
+
+.group-sertifikat a:hover {
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 0 15px #2563EB;
+    transform: translateY(-2px);
+    transition: all 0.3s ease;
+    color: black;
+}
+
+.group-sertifikat:hover {
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 0 15px #2563EB;
+    transform: translateY(-2px);
+    transition: all 0.3s ease;
+    color: black;
+}
+
+@media screen and (max-width: 768px) {
+
+    .list-sertifikat {
+        display: flex;
+        overflow-x: auto;
+        gap: 15px;
+        scroll-behavior: smooth;
+        scrollbar-width: none;
+        padding: 10px;
+    }
+
+    .group-sertifikat {
+        padding: 20px;
+        flex: 0 0 260px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .group-sertifikat img {
+        width: 100%;
+        height: 180px;
+        object-fit: contain;
+    }
+
+    .group-sertifikat a {
+        font-size: 10px;
+    }
+    
+}
